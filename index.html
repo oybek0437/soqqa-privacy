@@ -1,65 +1,121 @@
-<!DOCTYPE html>
-<html lang="uz">
+Ko'rinyapti — eski fayl noto'g'ri matn bilan to'la. Hamma narsani o'chirib, quyidagi HTML kodini to'liq joylashtiring:
+
+**Ctrl+A → o'chiring → quyidagi kodni paste qiling:**
+
+```html
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maxfiylik Siyosati — SOQQA.uz</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #333; background: #faf9f7; }
-    .container { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
-    .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
-    .logo-icon { width: 48px; height: 48px; background: #8B5E3C; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 22px; }
-    .logo-text { font-size: 20px; font-weight: 700; color: #8B5E3C; }
-    h1 { font-size: 28px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
-    .date { color: #888; font-size: 14px; margin-bottom: 40px; }
-    h2 { font-size: 18px; font-weight: 600; color: #1a1a1a; margin: 32px 0 12px; }
-    p { font-size: 15px; line-height: 1.7; color: #555; margin-bottom: 12px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    ul li { font-size: 15px; line-height: 1.7; color: #555; margin-bottom: 6px; }
-    a { color: #8B5E3C; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e8e4df; color: #888; font-size: 13px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOQQA.uz — Privacy Policy & Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --bg:#F4F6FB;--surface:#FFFFFF;--primary:#1E3A5F;--accent:#D4860A;
+    --text:#18181B;--muted:#6B7280;--border:#E2E6EE;--tag-bg:#EFF3FB;--tag-text:#1E3A5F;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#111827;--surface:#1E2A3A;--primary:#93B8E8;--accent:#F0A832;
+      --text:#F1F5F9;--muted:#94A3B8;--border:#2D3E55;--tag-bg:#1A2B40;--tag-text:#93B8E8;
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding-inline:20px;padding-block:40px 64px}
+  .page{max-width:680px;margin-inline:auto}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:40px;padding-bottom:28px;border-bottom:2px solid var(--border)}
+  .logo{width:52px;height:52px;background:var(--primary);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+  .app-name{font-size:18px;font-weight:700;color:var(--primary);line-height:1.2}
+  .app-sub{font-size:13px;color:var(--muted);margin-top:2px}
+  .section{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px 28px;margin-bottom:16px}
+  .section-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  .section h2{font-size:17px;font-weight:700;color:var(--primary);margin-bottom:12px}
+  .section p{color:var(--text);margin-bottom:10px;max-width:60ch}
+  .section p:last-child{margin-bottom:0}
+  .section ul{list-style:none;margin:10px 0;display:flex;flex-direction:column;gap:7px}
+  .section ul li{display:flex;gap:10px;align-items:flex-start;color:var(--text)}
+  .section ul li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:8px;flex-shrink:0}
+  .contact-card{background:var(--tag-bg);border-radius:8px;padding:16px 20px;margin-top:12px;display:flex;flex-direction:column;gap:8px}
+  .contact-row{display:flex;align-items:center;gap:10px;font-size:14px}
+  .contact-row strong{color:var(--muted);font-weight:500;min-width:72px}
+  .contact-row a{color:var(--primary);text-decoration:none;font-weight:600}
+  .meta{text-align:center;font-size:12px;color:var(--muted);margin-top:32px}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <div class="logo-icon">🏪</div>
-      <span class="logo-text">SOQQA.uz</span>
+<div class="page">
+  <header>
+    <div class="logo">📒</div>
+    <div>
+      <div class="app-name">SOQQA.uz — Nasiya Daftari</div>
+      <div class="app-sub">Privacy Policy &amp; Support · Maxfiylik siyosati</div>
     </div>
-    <h1>Maxfiylik Siyosati</h1>
-    <p class="date">Oxirgi yangilanish: 26 iyul 2026</p>
-    <p>SOQQA.uz ilovasi foydalanuvchilarining maxfiyligini hurmat qiladi.</p>
-    <h2>1. To'planadigan ma'lumotlar</h2>
-    <ul>
-      <li>Do'kon nomi va egasi ismi</li>
-      <li>Telefon raqami va/yoki email manzili</li>
-      <li>Mijozlar ismlari va telefon raqamlari</li>
-      <li>Qarz summasi, sanasi va eslatmalar</li>
-      <li>To'lov tarixi</li>
-    </ul>
-    <h2>2. Ma'lumotlardan foydalanish</h2>
-    <ul>
-      <li>Nasiya va qarz ma'lumotlarini saqlash va ko'rsatish</li>
-      <li>To'lov eslatmalarini yuborish (SMS/Telegram)</li>
-      <li>Hisobotlar tayyorlash</li>
-      <li>Ilovani yaxshilash va xatoliklarni tuzatish</li>
-    </ul>
-    <h2>3. Ma'lumotlarni saqlash</h2>
-    <p>Barcha ma'lumotlar Firebase (Google Cloud) serverlarida xavfsiz tarzda saqlanadi.</p>
-    <h2>4. Uchinchi shaxslarga ma'lumot berish</h2>
-    <p>Biz sizning shaxsiy ma'lumotlaringizni hech qanday uchinchi shaxslarga sotmaymiz. Istisno — Firebase (Google) xizmati.</p>
-    <h2>5. Kontaktlar ruxsati</h2>
-    <p>Ilova yangi mijoz qo'shishda kontaktlar ro'yxatiga kirishni so'rashi mumkin. Bu ixtiyoriy.</p>
-    <h2>6. Ma'lumotlarni o'chirish</h2>
-    <p>Murojaat: <a href="mailto:oybek0437@gmail.com">oybek0437@gmail.com</a></p>
-    <h2>7. Bolalar maxfiyligi</h2>
-    <p>Ilova 7 yoshdan katta foydalanuvchilarga mo'ljallangan.</p>
-    <h2>8. Bog'lanish</h2>
-    <p>Email: <a href="mailto:oybek0437@gmail.com">oybek0437@gmail.com</a></p>
-    <p>Veb-sayt: <a href="https://soqqa.uz">soqqa.uz</a></p>
-    <div class="footer">© 2026 SOQQA.uz. Barcha huquqlar himoyalangan.</div>
+  </header>
+
+  <div class="section">
+    <div class="section-label">Overview · Umumiy ma'lumot</div>
+    <h2>Privacy Policy</h2>
+    <p>SOQQA.uz — Nasiya Daftari is a debt and credit management tool for small business owners. This policy explains what data we collect, how we use it, and your rights.</p>
+    <p>Ushbu ilova kichik biznes egalari uchun nasiya va qarz boshqaruv vositasidir.</p>
   </div>
+
+  <div class="section">
+    <div class="section-label">Data Collection · Ma'lumotlar</div>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>Your phone number and password (used for account login)</li>
+      <li>Customer names and phone numbers you enter manually</li>
+      <li>Debt amounts and due dates you record in the app</li>
+      <li>SMS sending history (reminders sent to customers)</li>
+    </ul>
+    <p style="margin-top:12px">We do <strong>not</strong> collect location data, device contacts, or payment information.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Data Use · Foydalanish</div>
+    <h2>How We Use Your Data</h2>
+    <ul>
+      <li>To authenticate your account and keep your data secure</li>
+      <li>To display your customer debt records within the app</li>
+      <li>To send SMS payment reminders on your behalf (via native iOS SMS)</li>
+      <li>To generate reports visible only to you</li>
+    </ul>
+    <p style="margin-top:12px">We do <strong>not</strong> sell your data to third parties or use it for advertising.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Third-Party Services · Xizmatlar</div>
+    <h2>External Services Used</h2>
+    <ul>
+      <li><strong>Native iOS SMS</strong> — sends payment reminders directly from your device</li>
+      <li><strong>Telegram</strong> — a deep link opens Telegram to message the customer; no data is shared automatically</li>
+    </ul>
+    <p style="margin-top:12px">No analytics SDKs, advertising networks, or third-party data processors are used.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Your Rights · Huquqlaringiz</div>
+    <h2>Data Deletion &amp; Account</h2>
+    <p>You may request deletion of your account and all associated data at any time by contacting us. We will process your request within 7 business days.</p>
+    <p>Hisobingizni o'chirish uchun quyidagi email ga murojaat qiling.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Contact · Aloqa</div>
+    <h2>Support &amp; Contact</h2>
+    <p>Having trouble with the app? We're here to help.</p>
+    <div class="contact-card">
+      <div class="contact-row"><strong>Email</strong><a href="mailto:oybek0437@gmail.com">oybek0437@gmail.com</a></div>
+      <div class="contact-row"><strong>App</strong><span>SOQQA.uz — Nasiya Daftari (iOS)</span></div>
+      <div class="contact-row"><strong>Developer</strong><span>Oybek Boyatov</span></div>
+    </div>
+  </div>
+
+  <div class="meta">Last updated: <strong>September 2026</strong> &nbsp;·&nbsp; SOQQA.uz — Nasiya Daftari</div>
+</div>
 </body>
 </html>
+```
+
+Paste qilib **"Commit changes"** ni bosing!
